@@ -22,7 +22,7 @@ if uploaded_files:
       if file_ext == ".cvs":
         df= pd.read_csv(file)
       elif file_ext ==".xlsx":
-        df=pd.read_excel(file, engine='xlrd')
+        df=pd.read_excel(file)
       else:st.error("Unsupported file type:{file_ext}")
 
         # Display Info about the file
